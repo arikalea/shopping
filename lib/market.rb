@@ -3,7 +3,7 @@ class Market
               :vendors
 
   def initialize(name)
-    @name = name
+    @name    = name
     @vendors = []
   end
 
@@ -54,6 +54,6 @@ class Market
 
     items.map do |item|
       item.name
-    end.sort 
+    end.sort
   end
 end

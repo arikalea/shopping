@@ -3,9 +3,7 @@ class Item
               :price
 
   def initialize(info)
-    @name = info[:name]
+    @name  = info[:name]
     @price = info[:price].delete('$').to_f
   end
-
-
 end

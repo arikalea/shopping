@@ -5,7 +5,6 @@ require './lib/vendor'
 require './lib/market'
 
 class MarketTest < Minitest:: Test
-
   def setup
     @market = Market.new("South Pearl Street Farmers Market")
     @vendor1 = Vendor.new("Rocky Mountain Fresh")
