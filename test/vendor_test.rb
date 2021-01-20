@@ -55,8 +55,8 @@ class VendorTest < Minitest:: Test
 
   def test_sell_item
     @vendor1.stock(@item1, 35)
-    @vendor.sell(@item1, 5)
+    @vendor1.sell(@item1, 5)
 
-    assert_equal ({@item1 => 30}), @vendor.inventory
+    assert_equal ({@item1 => 30}), @vendor1.inventory
   end
 end

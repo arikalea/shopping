@@ -28,4 +28,8 @@ class Vendor
       check_stock(item) * item.price
     end
   end
+
+  def sell(item, quantity)
+    @inventory[item] -= quantity
+  end
 end
