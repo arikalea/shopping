@@ -7,6 +7,12 @@ class Vendor
     @inventory = {}
   end
 
-
+  def check_stock(item)
+    if @inventory[item]
+      @inventory[item]
+    else
+      0
+    end 
+  end
 
 end
