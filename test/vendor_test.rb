@@ -18,4 +18,10 @@ class VendorTest < Minitest:: Test
   def test_check_stock_starts_at_none
     assert_equal 0, @vendor.check_stock(@item1)
   end
+
+  def test_stock_an_item
+    @vendor.stock(@item1, 30)
+
+    assert_equal ({@item1 => 30}), @vendor.check_stock(@item1)
+  end
 end
