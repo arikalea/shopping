@@ -46,4 +46,14 @@ class Market
     end
     overstocked
   end
+
+  def sorted_item_list
+    items = @vendors.map do |vendor|
+      vendor.inventory.keys
+    end.flatten.uniq
+
+    items.map do |item|
+      item.name
+    end.sort 
+  end
 end
